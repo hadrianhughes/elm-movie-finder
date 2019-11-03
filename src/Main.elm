@@ -98,7 +98,7 @@ view model =
           ] [],
           button [ onClick Search ] [ text "Search" ]
         ],
-      ul [] <| List.map movieItem model.results
+      ul [ class "movies" ] <| List.map movieItem model.results
     ]
 
 movieItem : Movie -> Html Msg
